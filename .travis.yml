@@ -9,7 +9,7 @@ script:
   -docker run -e CI=true boyan77/basic-react npm run test
 
 deploy:
-  provider: elastickbeanstalk
+  provider: elasticbeanstalk
   region: $AWS_REGION
   app: $AWS_APP
   env: $AWS_ENVIRONMENT
